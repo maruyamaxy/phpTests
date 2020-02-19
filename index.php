@@ -7,7 +7,7 @@ require_once "db.php";
     // sql文をデーターベースからuserテーブルの中身を全部取得する
     $sql = $db->query("SELECT * FROM user");
 
-    include './test.php';
+    include './temp/test.php';
     exit();
   } catch (PDOException $e) {
     echo '接続失敗';

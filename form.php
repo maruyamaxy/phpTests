@@ -21,7 +21,7 @@ if($mode === 'add') {
     // 保存をする
     $stmt->execute($params);
 
-    include './index.php';
+    include './temp/index.php';
     exit();
   } catch (PDOException $e) {
     exit('データベースに接続できませんでした。' . $e->getMessage());
