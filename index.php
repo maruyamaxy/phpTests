@@ -4,7 +4,7 @@ require_once "db.php";
   try {
     // データベースの接続
     $db = new PDO($dsn, $user, $password);
-    // sql文をデーターベースに送る
+    // sql文をデーターベースからuserテーブルの中身を全部取得する
     $sql = $db->query("SELECT * FROM user");
 
     include './test.php';
